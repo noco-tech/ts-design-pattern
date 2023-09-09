@@ -1,7 +1,7 @@
 export {}
 
 // 従業員の職位
-type Grade = "junior" | "middle" | "senior";
+type Grade = "junior" | "middle" | "senior" | "expert"
 
 class Employee {
     constructor(
@@ -32,7 +32,7 @@ function run() {
     const emp3 = new Employee("Tanaka", "senior");
 
     const bonusCalculator = new BonusCalculator(100);
-    
+
     console.log(bonusCalculator.getBonus(emp1));
     console.log(bonusCalculator.getBonus(emp2));
     console.log(bonusCalculator.getBonus(emp3));
